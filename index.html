@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+      <head>
+          <title>25 + 5 Clock v2 by TSWebDev</title>
+          <link rel='stylesheet' type='text/css' href= 'styles.css'>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+          <script type='text/javascript' src='clockBrain.js'></script>
+          <script src="https://kit.fontawesome.com/c115f30072.js" crossorigin="anonymous"></script> 
+                
+      </head>
+      <body>
+          <section id='header'>
+               <h1 id='header-text'>25 + 5 Clock v2 by TSWebDev</h1> 
+            
+          </section>
+          <article id='info'>  
+              <div id='break-controls'>
+                  <h2 id='break-label'>Break Length</h2>
+                  <div id='element1'>
+                    <button type='button' id='break-increment'><i class='fas fa-angle-up'></i></button>
+                    <span id='break-length'></span>
+                    <button type='button' id='break-decrement'><i class='fas fa-angle-down'></i></button>
+                  </div>
+              </div>
+              <div id='session-controls'>
+                  <h2 id='session-label'>Session Length</h2>
+                  <div id='element2'>
+                    <button type='button' id='session-increment'><i class='fas fa-angle-up'></i></button>
+                    <span id='session-length'></span>
+                    <button type='button' id='session-decrement'><i class='fas fa-angle-down'></i></button>
+                  </div>
+              </div>
+          </article>
+          <article id='display'>
+              <h2 id='timer-label'>Session</h2>
+              <div id='time-left'></div>
+              <div id='btn-div'>
+                  <button type='button' id='start_stop'><i class='fa fa-play-circle-o' aria-hidder='true'></i></button>
+                  <button type='button' id='reset'><i class='fa fa-refresh' aria-hidder='true'></i></button>
+              </div>
+              <audio id='beep' src='https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav' muted></audio>
+          </article>
+             <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+      </body>
+
+</html>
